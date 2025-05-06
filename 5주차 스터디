@@ -1,4 +1,4 @@
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main(void)
 {
@@ -6,6 +6,24 @@ int main(void)
         for (int j = 0; j < i; ++j)// 안쪽: 줄마다 * 출력
             printf("*");
         printf("\n"); // 한 줄 끝나면 줄바꿈
+    }
+    return 0;
+}
+*/
+
+#include <stdio.h>
+
+int main(void)
+{
+    int n = 5;
+
+    for (int i = 0; i < n; ++i){
+        for (int bl = 0; bl < i; ++bl)//bl == 공백
+            printf(" ");
+        for (int sta = 0; sta < n - i; ++sta) // sta == 별
+            printf("*");
+
+        printf("\n");
     }
     return 0;
 }
